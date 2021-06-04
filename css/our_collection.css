@@ -1,0 +1,67 @@
+body{
+    margin-left: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+h1{
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+
+}
+
+.separator svg{
+    width: auto;
+}
+
+.separator line{
+    stroke: #454545;
+    stroke-width: 3;
+}
+.separator path{
+    fill: #ffce76;
+}
+
+.div-products{
+    display: table-cell;
+}
+.div-products div{
+    display: inline-block;
+    width: 363px;
+    height: 533px;
+    background: #ffffff;
+    box-shadow: 0 0 1em #dfdfe2;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    margin: 20px;
+
+}
+.div-products div img{
+    width: 302px;
+    height: 361px;
+    object-fit: contain;
+}
+
+.div-products div h1,h2,h3{
+    text-align: left;
+    font-weight:normal;
+}
+
+.div-products div h1{
+    font-size: 27px;
+}
+
+.div-products div h2{
+    font-size: 20px;
+}
+
+.div-products div h3{
+    font-size: 14px;
+    color: #6d6d6d;
+}
+
+.div-products div:hover{
+
+}
+
+
