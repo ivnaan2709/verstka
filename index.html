@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+<!--    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -19,70 +23,73 @@
             <div class="header-navigation">
                 <img src="img/logo.png" class="header-logo">
                 <nav class="navigation-nav">
-                    <a href="#" class="navigation-page-links">Home</a>
+                    <a href="#Section_Slider" class="navigation-page-links">Home</a>
                     <a href="#" class="navigation-page-links">Features</a>
-                    <a href="#" class="navigation-page-links">Shop</a>
-                    <a href="#" class="navigation-page-links">Blog</a>
+                    <a href="#Section_shop" class="navigation-page-links">Shop</a>
+                    <a href="#Section_blog" class="navigation-page-links">Blog</a>
                     <a href="#" class="navigation-page-links">Accessories</a>
-                    <a href="#" class="navigation-page-links">Contact</a>
+                    <a href="#Section_contact" class="navigation-page-links">Contact</a>
                 </nav>
             </div>
         </div>
     </header>
 
 <!--    section "Slider"-->
-    <section class="section-slider">
-        <div class="slider-inner carousel slider" id="carouselControls" data-ride="carousel">
-            <div class="slider-items carousel-inner">
 
-                <div class="carousel-item active slider-item ">
+    <section id="Section_Slider" class="section section-slider">
+        <div id="carouselExampleControls" class="carousel slide slider" data-ride="carousel">
+
+            <div class="carousel-inner slider-inner">
+
+                <div class="carousel-item active slider-item">
                     <div class="slider-content">
                         <div class="slider-text">
                             <div class="welcome">
                                 <svg class="line">
                                     <line x1="0" y1="0" x2="63" y2="0"></line>
                                 </svg>
-                                Welcome To <i>Pahu Design</i></div>
+                                Welcome To <i>Pahu Design</i>
+                            </div>
                             <div class="slogan">You are in good hand with us</div>
                         </div>
 
-                        <div class="slider-wrapper slider-img">
-                            <img class="slider-image" src="img/slider1.png" alt="">
+                        <div class="background-slider">
+                            <img src="img/slider-filter.png" class="slider-filter">
+                        </div>
+                        <div class="slider-div-img">
+                            <img src="img/slider1.png" alt="" class="slider-img">
                         </div>
                     </div>
                 </div>
 
                 <div class="carousel-item slider-item">
-                    <div class="slider-content">
-                        <div class="slider-wrapper slider-img">
-                            <img class="slider-image" src="img/slider1.png" alt="">
-                        </div>
+                    <div class="slider-div-img">
+                        <img src="img/slider1.png" alt="" class="slider-img">
                     </div>
                 </div>
 
             </div>
 
-            <div class="slider-control slider-control-left" role="button"> < </div>
-            <div class="slider-control slider-control-right" role="button"> > </div>
+            <a class="carousel-control-prev slider-control" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon  " aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
 
-<!--            <a class="slider-control slider-control-left carousel-control-prev" role="button" href="#carouselControls" data-slide="prev">-->
-<!--                <span class="slider-control"><</span>-->
-<!--            </a>-->
-
-<!--            <a class="slider-control slider-control-right carousel-control-next" role="button" href="#carouselControls" data-slide="next">-->
-<!--                <span class="slider-control">></span>-->
-<!--            </a>-->
+            <a class="carousel-control-next slider-control" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon  " aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
 
         </div>
     </section>
 
 <!--   section "Who choose use"-->
-    <section class="section-choose">
+    <section id="Section_choose" class="section-choose">
         <div class="who-choose-use">
             <div class="container">
                 <div class="wcu-inner">
                     <div class="section-header">
-                        <h1 class="section-title wcu-heading1">Who choose use</h1>
+                        <h1 class="section-title wcu-heading1">Who choose us</h1>
                         <svg class="separator">
                             <line class="separator-line separator-line-choose" x1="0" y1="6" x2="230" y2="6"/>
                             <path class="separator-rhomb" d="M244 6, 249 0, 254 6, 249 12z" />
@@ -153,7 +160,7 @@
     </section>
 
 <!--    section Banner-->
-    <section class="section-banner">
+    <section id="Section_banner" class="section-banner">
         <div class="banner-inner">
             <div class="banner">
                 <div class="banner-inner-col banner-inner-col-first">
@@ -199,7 +206,7 @@
     </section>
 
 <!--    section "Our collection"-->
-    <section class="section-collection">
+    <section id="Section_shop" class="section-collection">
         <div class="our-collection">
             <div class="container">
                 <div class="section-header">
@@ -366,7 +373,7 @@
     </section>
 
 <!--    section "Our designer"-->
-    <section class="section">
+    <section id="Section_designer" class="section">
         <div class="designer-inner">
             <div class="designer-content">
 
@@ -430,7 +437,7 @@
     </section>
 
 <!--    section "Our project"-->
-    <section class="section-project">
+    <section id="Section_project" class="section-project">
         <div class="project-inner">
             <div class="section-header">
                 <h1 class="section-title title-project">Our project</h1>
@@ -495,7 +502,7 @@
     </section>
 
 <!--    section "From uor blog"-->
-    <section class="section-news">
+    <section id="Section_blog" class="section-news">
         <div class="container">
                 <div class="section-header">
                     <h1 class="section-title news-title">From our blog</h1>
@@ -513,7 +520,7 @@
                             <div class="news-text">
                                 <div class="heading-news">Our new work space</div>
                                 Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!
-                                <div class="read-more">read more →</div>
+                                <div class="read-more" role="button">read more →</div>
                             </div>
                         </div>
                     </div>
@@ -524,7 +531,7 @@
                             <div class="news-text">
                                 <div class="heading-news">Our new work space</div>
                                 Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!
-                                <div class="read-more">read more →</div>
+                                <div class="read-more" role="button">read more →</div>
                             </div>
                         </div>
                     </div>
@@ -535,7 +542,7 @@
                             <div class="news-text">
                                 <div class="heading-news">Our new work space</div>
                                 Feel alive! So if you’re looking for, here is a list of some of the most popular and fiestas the Mardin has to offer thisfiestas the Mardin has to offer!
-                                <div class="read-more">read more →</div>
+                                <div class="read-more" role="button">read more →</div>
                             </div>
                         </div>
                     </div>
@@ -545,7 +552,7 @@
     </section>
 
 <!-- Footer-->
-    <footer class="footer">
+    <footer id="Section_contact" class="footer">
         <div class="container">
             <div class="footer-inner">
                 <div class="footer-col">
@@ -583,7 +590,7 @@
                             <a href="#" class="fa fa-facebook"></a>
                             <a href="#" class="fa fa-google"></a>
                             <a href="#" class="fa fa-twitter"></a>
-                            <a href="#" class="fa fa-youtube" style="margin-right: 0"></a>
+                            <a href="#" class="fa fa-youtube"></a>
                         </div>
                     </div>
 
@@ -609,6 +616,13 @@
             </div><!--footer-inner-->
         </div><!--container-->
     </footer>
+
+
+
+<!--   Script bootstrap-->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 </html>
